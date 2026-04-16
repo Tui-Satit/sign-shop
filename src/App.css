@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
 }
 
 body {
@@ -188,33 +187,156 @@ img {
   color: #1a1a1a;
 }
 
-/* Portfolio */
-.portfolio-grid {
-<<<<<<< HEAD
-  margin-top: 26px;
-=======
-  margin-top: 20px;
->>>>>>> 3916390 (Update front page)
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+/* About */
+.about-section {
+  padding: 80px 20px;
+  background: #ffffff;
+}
+
+.about-section .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-wrapper {
+  width: 100%;
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-text {
+  max-width: 820px;
+  margin: 0 auto 32px;
+}
+
+.about-label {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2f6b3d;
+  background: #eef7f0;
+  padding: 8px 16px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+}
+
+.about-text h2 {
+  font-size: 2.6rem;
+  line-height: 1.25;
+  color: #111;
+  margin: 0 0 18px;
+}
+
+.about-intro {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: #666;
+}
+
+.about-features {
+  max-width: 820px;
+  margin: 28px auto 24px;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
-.portfolio-img {
+.about-feature {
   width: 100%;
-  height: 220px;
-  object-fit: cover;
+  background: #f8f8f8;
+  border: 1px solid #ececec;
+  border-radius: 20px;
+  padding: 26px 32px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
+.about-feature h3 {
+  margin: 0 0 10px;
+  font-size: 1.35rem;
+  line-height: 1.35;
+  color: #111;
+}
+
+.about-feature p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #666;
+}
+
+.about-outro {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 1.02rem;
+  line-height: 1.9;
+  color: #555;
+}
+
+/* Portfolio */
+.portfolio-section {
+  padding: 80px 20px;
+  background: #f7f7f7;
+}
+
+.portfolio-section h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 42px;
+}
+
+.portfolio-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.portfolio-card {
+  background: #ffffff;
   border-radius: 18px;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.portfolio-img:hover {
-  transform: translateY(-4px) scale(1.01);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+.portfolio-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
 }
 
-/* Contact Section */
+.portfolio-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.portfolio-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #111;
+  margin: 0 0 10px;
+  line-height: 1.4;
+}
+
+.portfolio-description {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #666;
+  margin: 0;
+}
+
+/* Contact */
 .contact-section {
   padding: 90px 20px;
   background: linear-gradient(to bottom, #f4efe7, #efe7db);
@@ -415,10 +537,16 @@ img {
 
 /* Responsive */
 @media (max-width: 992px) {
-  .hero-content,
-  .service-grid,
-  .portfolio-grid {
+  .hero-content {
     grid-template-columns: 1fr;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .contact-info {
@@ -459,14 +587,17 @@ img {
     font-size: 2rem;
   }
 
-  .section {
-    padding: 64px 0;
+  .section,
+  .portfolio-section,
+  .about-section {
+    padding: 64px 16px;
   }
 
   .contact-section {
     padding: 72px 16px;
   }
 
+  .portfolio-grid,
   .contact-info {
     grid-template-columns: 1fr;
   }
@@ -479,9 +610,40 @@ img {
   .map-link-btn {
     width: 100%;
   }
+
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+  .about-intro,
+  .about-outro {
+    max-width: 100%;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .about-feature {
+    padding: 22px 18px;
+  }
+
+  .about-feature h3 {
+    font-size: 1.15rem;
+  }
+
+  .about-feature p,
+  .portfolio-description {
+    font-size: 0.95rem;
+  }
+
+  .portfolio-image {
+    height: 200px;
+  }
+
+  .portfolio-card h3 {
+    font-size: 1.2rem;
+  }
 }
 
-<<<<<<< HEAD
 @media (max-width: 480px) {
   .logo {
     font-size: 1.55rem;
@@ -508,7 +670,9 @@ img {
   .contact-card,
   .map-card,
   .hero-card,
-  .service-card {
+  .service-card,
+  .portfolio-card,
+  .about-feature {
     border-radius: 22px;
   }
 
@@ -526,221 +690,5 @@ img {
 
   .contact-content h3 {
     white-space: normal;
-=======
-/* ===== PORTFOLIO SECTION ===== */
-.portfolio-section {
-  padding: 80px 20px;
-  background: #f7f7f7;
-}
-
-.portfolio-section h2 {
-  text-align: center;
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #111;
-  margin-bottom: 42px;
-}
-
-/* ===== GRID ===== */
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-/* ===== CARD ===== */
-.portfolio-card {
-  background: #ffffff;
-  border-radius: 18px;
-  padding: 16px;
-
-  /* 🔥 minimal style */
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
-  /* ถ้าอยากเรียบสุด ใช้อันนี้แทน */
-  /* box-shadow: none;
-     border: 1px solid #ececec; */
-
-  display: flex;
-  flex-direction: column;
-
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.portfolio-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
-}
-
-/* ===== IMAGE ===== */
-.portfolio-image {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 14px;
-  display: block;
-  margin-bottom: 16px;
-}
-
-/* ===== TITLE ===== */
-.portfolio-card h3 {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #111;
-  margin: 0 0 10px;
-  line-height: 1.4;
-}
-
-/* ===== DESCRIPTION ===== */
-.portfolio-description {
-  font-size: 0.95rem;
-  line-height: 1.7;
-  color: #666;
-  margin: 0;
-
-  /* ✨ ตัดข้อความให้ clean */
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 992px) {
-  .portfolio-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .portfolio-section {
-    padding: 60px 16px;
-  }
-
-  .portfolio-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .portfolio-image {
-    height: 200px;
-  }
-
-  .portfolio-card h3 {
-    font-size: 1.2rem;
-  }
-
-  .portfolio-description {
-    font-size: 0.9rem;
-  }
-}
-
-/* ===== ABOUT SECTION ===== */
-/* ===== ABOUT SECTION ===== */
-.about-section {
-  padding: 80px 20px;
-  background: #ffffff;
-}
-
-.about-section .container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.about-wrapper {
-  width: 100%;
-  max-width: 820px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.about-text {
-  max-width: 820px;
-  margin: 0 auto 32px;
-}
-
-.about-label {
-  display: inline-block;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #2f6b3d;
-  background: #eef7f0;
-  padding: 8px 16px;
-  border-radius: 999px;
-  margin-bottom: 18px;
-}
-
-.about-text h2 {
-  font-size: 2.6rem;
-  line-height: 1.25;
-  color: #111;
-  margin: 0 0 18px;
-}
-
-.about-intro {
-  max-width: 760px;
-  margin: 0 auto;
-  font-size: 1.05rem;
-  line-height: 1.9;
-  color: #666;
-}
-
-.about-features {
-  max-width: 820px;
-  margin: 28px auto 0;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.about-feature {
-  width: 100%;
-  background: #f8f8f8;
-  border: 1px solid #ececec;
-  border-radius: 20px;
-  padding: 26px 32px;
-  text-align: center;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
-}
-
-.about-feature h3 {
-  margin: 0 0 10px;
-  font-size: 1.35rem;
-  line-height: 1.35;
-  color: #111;
-}
-
-.about-feature p {
-  margin: 0;
-  font-size: 1rem;
-  line-height: 1.8;
-  color: #666;
-}
-
-@media (max-width: 768px) {
-  .about-section {
-    padding: 64px 16px;
-  }
-
-  .about-text h2 {
-    font-size: 2rem;
-  }
-
-  .about-intro {
-    max-width: 100%;
-    font-size: 1rem;
-    line-height: 1.8;
-  }
-
-  .about-feature {
-    padding: 22px 18px;
-  }
-
-  .about-feature h3 {
-    font-size: 1.15rem;
-  }
-
-  .about-feature p {
-    font-size: 0.95rem;
->>>>>>> 3916390 (Update front page)
   }
 }
