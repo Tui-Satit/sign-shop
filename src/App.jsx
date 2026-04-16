@@ -10,6 +10,7 @@ function App() {
     "งานป้ายขนาดเล็กและขนาดใหญ่",
   ];
 
+
   const portfolioImages = [
     "/images/sign1.jpg",
     "/images/sign2.jpg",
@@ -19,6 +20,45 @@ function App() {
     "/images/front-shop.jpg",
   ];
 
+  const portfolioItems = [
+  {
+    id: 1,
+    title: "วรรณชัย อาร์ตช็อป",
+    image: "/images/front-shop.jpg",
+    description: "ออกแบบและผลิตป้ายหน้าร้าน เน้นข้อความชัดเจน มองเห็นง่าย เหมาะสำหรับใช้งานภายนอก-ภายใน"
+  },
+  {
+    id: 2,
+    title: "สติ๊กเกอร์ป้ายโฆษณา",
+    image: "/images/sign2.jpg",
+    description: "งานสติ๊กเกอร์สำหรับโฆษณา เพิ่มความโดดเด่นให้แบรนด์และช่วยสื่อสารโปรโมชั่น"
+  },
+  {
+    id: 3,
+    title: "สติ๊กเกอร์ปตกแต่งรถยนต์",
+    image: "/images/sign3.jpg",
+    description: "งานสติ๊กเกอร์สำหรับตกแต่งรถยนต์ เพิ่มความโดดเด่น เท่ทันสมัย"
+  },
+   {
+    id: 4,
+    title: "ปสติ๊กเกอร์ติดกล่องอาหาร",
+    image: "/images/sign4.jpg",
+    description: "ออกแบบและผลิตสติ๊กเกอร์สำหรับติดกล่องอาหาร เพิ่มความน่าสนใจและช่วยสื่อสารข้อมูลสินค้าได้อย่างมีประสิทธิภาพ"
+  },
+  {
+    id: 5,
+    title: "สติ๊กเกอร์ร้านอาหารและเครื่องดื่ม",
+    image: "/images/sign1.jpg",
+    description: "งานสติ๊กเกอร์สำหรับร้านอาหารและเครื่องดื่ม ช่วยเพิ่มความน่าสนใจให้เมนูและสื่อสารโปรโมชั่นได้อย่างมีประสิทธิภาพ"
+  },
+  {
+    id: 6,
+    title: "ป้ายอะคริลิค",
+    image: "/images/sign5.jpg",
+    description: "งานป้ายอะคริลิคดีไซน์เรียบหรู เหมาะกับร้านค้า บริษัท และสำนักงานที่ต้องการภาพลักษณ์ทันสมัย"
+  }
+];
+}
   return (
     <div className="app">
       <header className="header">
@@ -74,15 +114,47 @@ function App() {
         </div>
       </section>
 
-      <section id="about" className="section">
-        <div className="container">
-          <h2>About</h2>
-          <p>
-            ร้านป้ายอารมณ์ขัน ให้บริการออกแบบและผลิตป้ายโฆษณาหลากหลายประเภท
-            เน้นงานคุณภาพ ดูดี น่าเชื่อถือ และเหมาะกับธุรกิจของลูกค้า
-          </p>
-        </div>
-      </section>
+    <section className="about-section" id="about">
+  <div className="container">
+    <div className="about-wrapper">
+      <div className="about-text">
+        <span className="about-label">About Us</span>
+        <h2>วรรณชัย อาร์ตช็อป</h2>
+
+        <p className="about-intro">
+          เราให้บริการออกแบบ ผลิต และติดตั้งงานป้ายทุกประเภท
+          ด้วยความใส่ใจในรายละเอียด เน้นงานที่เรียบร้อย ทันสมัย
+          และเหมาะกับการใช้งานจริงของลูกค้า
+        </p>
+
+        {/* 🔥 ย้ายมาไว้ตรงนี้ */}
+        <div className="about-features">
+          <div className="about-feature">
+            <h3>ออกแบบสวย เรียบ ดูมืออาชีพ</h3>
+            <p>เน้นงานดีไซน์ที่อ่านง่าย ใช้งานจริงได้ดี และเหมาะกับภาพลักษณ์ของธุรกิจ</p>
+          </div>
+
+          <div className="about-feature">
+            <h3>ผลิตงานคุณภาพ</h3>
+            <p>เลือกใช้วัสดุที่เหมาะสมกับประเภทงาน เพื่อให้ได้ผลงานที่สวยและทนทาน</p>
+          </div>
+
+          <div className="about-feature">
+            <h3>บริการครบ ตั้งแต่เริ่มจนจบ</h3>
+            <p>ดูแลตั้งแต่ขั้นตอนออกแบบ ผลิต ไปจนถึงติดตั้งอย่างเป็นระบบ</p>
+          </div>
+        </div>  <br />
+
+        {/* 👉 ข้อความนี้จะอยู่ล่างสุด */}
+        <p>
+          ไม่ว่าจะเป็นป้ายไวนิล สติ๊กเกอร์ ป้ายอะคริลิค หรือสื่อประชาสัมพันธ์หน้าร้าน
+          เราพร้อมช่วยให้ร้านค้า ธุรกิจ และองค์กรของคุณดูโดดเด่น น่าเชื่อถือ
+          และสื่อสารแบรนด์ได้ชัดเจนยิ่งขึ้น
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
       <section id="services" className="section alt">
         <div className="container">
@@ -100,6 +172,7 @@ function App() {
         </div>
       </section>
 
+<<<<<<< HEAD
       <section id="portfolio" className="section">
         <div className="container">
           <h2>Portfolio</h2>
@@ -113,8 +186,27 @@ function App() {
               />
             ))}
           </div>
+=======
+    <section className="portfolio-section" id="portfolio">
+  <div className="container">
+    <h2>Portfolio</h2>
+
+    <div className="portfolio-grid">
+      {portfolioItems.map((item) => (
+        <div className="portfolio-card" key={item.id}>
+          <img
+            src={item.image}
+            alt={item.title}
+            className="portfolio-image"
+          />
+          <h3>{item.title}</h3>
+          <p className="portfolio-description">{item.description}</p>
+>>>>>>> 3916390 (Update front page)
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       <section className="contact-section" id="contact">
         <div className="container">
