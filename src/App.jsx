@@ -10,55 +10,51 @@ function App() {
     "งานป้ายขนาดเล็กและขนาดใหญ่",
   ];
 
-
-  const portfolioImages = [
-    "/images/sign1.jpg",
-    "/images/sign2.jpg",
-    "/images/sign3.jpg",
-    "/images/sign4.jpg",
-    "/images/sign5.jpg",
-    "/images/front-shop.jpg",
+  const portfolioItems = [
+    {
+      id: 1,
+      title: "วรรณชัย อาร์ตช็อป",
+      image: "/images/front-shop.jpg",
+      description:
+        "ออกแบบและผลิตป้ายหน้าร้าน เน้นข้อความชัดเจน มองเห็นง่าย เหมาะสำหรับใช้งานภายนอกและภายใน",
+    },
+    {
+      id: 2,
+      title: "สติ๊กเกอร์ป้ายโฆษณา",
+      image: "/images/sign2.jpg",
+      description:
+        "งานสติ๊กเกอร์สำหรับโฆษณา เพิ่มความโดดเด่นให้แบรนด์และช่วยสื่อสารโปรโมชั่นได้อย่างมีประสิทธิภาพ",
+    },
+    {
+      id: 3,
+      title: "สติ๊กเกอร์ตกแต่งรถยนต์",
+      image: "/images/sign3.jpg",
+      description:
+        "งานสติ๊กเกอร์สำหรับตกแต่งรถยนต์ เพิ่มความโดดเด่น เท่ ทันสมัย และสะท้อนเอกลักษณ์ของแบรนด์",
+    },
+    {
+      id: 4,
+      title: "สติ๊กเกอร์ติดกล่องอาหาร",
+      image: "/images/sign4.jpg",
+      description:
+        "ออกแบบและผลิตสติ๊กเกอร์สำหรับติดกล่องอาหาร เพิ่มความน่าสนใจและช่วยสื่อสารข้อมูลสินค้าได้อย่างชัดเจน",
+    },
+    {
+      id: 5,
+      title: "สติ๊กเกอร์ร้านอาหารและเครื่องดื่ม",
+      image: "/images/sign1.jpg",
+      description:
+        "งานสติ๊กเกอร์สำหรับร้านอาหารและเครื่องดื่ม ช่วยเพิ่มความน่าสนใจให้เมนูและสื่อสารโปรโมชั่นได้อย่างลงตัว",
+    },
+    {
+      id: 6,
+      title: "ป้ายอะคริลิค",
+      image: "/images/sign5.jpg",
+      description:
+        "งานป้ายอะคริลิคดีไซน์เรียบหรู เหมาะกับร้านค้า บริษัท และสำนักงานที่ต้องการภาพลักษณ์ทันสมัย",
+    },
   ];
 
-  const portfolioItems = [
-  {
-    id: 1,
-    title: "วรรณชัย อาร์ตช็อป",
-    image: "/images/front-shop.jpg",
-    description: "ออกแบบและผลิตป้ายหน้าร้าน เน้นข้อความชัดเจน มองเห็นง่าย เหมาะสำหรับใช้งานภายนอก-ภายใน"
-  },
-  {
-    id: 2,
-    title: "สติ๊กเกอร์ป้ายโฆษณา",
-    image: "/images/sign2.jpg",
-    description: "งานสติ๊กเกอร์สำหรับโฆษณา เพิ่มความโดดเด่นให้แบรนด์และช่วยสื่อสารโปรโมชั่น"
-  },
-  {
-    id: 3,
-    title: "สติ๊กเกอร์ปตกแต่งรถยนต์",
-    image: "/images/sign3.jpg",
-    description: "งานสติ๊กเกอร์สำหรับตกแต่งรถยนต์ เพิ่มความโดดเด่น เท่ทันสมัย"
-  },
-   {
-    id: 4,
-    title: "ปสติ๊กเกอร์ติดกล่องอาหาร",
-    image: "/images/sign4.jpg",
-    description: "ออกแบบและผลิตสติ๊กเกอร์สำหรับติดกล่องอาหาร เพิ่มความน่าสนใจและช่วยสื่อสารข้อมูลสินค้าได้อย่างมีประสิทธิภาพ"
-  },
-  {
-    id: 5,
-    title: "สติ๊กเกอร์ร้านอาหารและเครื่องดื่ม",
-    image: "/images/sign1.jpg",
-    description: "งานสติ๊กเกอร์สำหรับร้านอาหารและเครื่องดื่ม ช่วยเพิ่มความน่าสนใจให้เมนูและสื่อสารโปรโมชั่นได้อย่างมีประสิทธิภาพ"
-  },
-  {
-    id: 6,
-    title: "ป้ายอะคริลิค",
-    image: "/images/sign5.jpg",
-    description: "งานป้ายอะคริลิคดีไซน์เรียบหรู เหมาะกับร้านค้า บริษัท และสำนักงานที่ต้องการภาพลักษณ์ทันสมัย"
-  }
-];
-}
   return (
     <div className="app">
       <header className="header">
@@ -88,7 +84,7 @@ function App() {
             <p className="eyebrow">ร้านทำป้ายครบวงจร</p>
             <h2>ร้านป้ายอารมณ์ขัน</h2>
             <p className="hero-text">
-              รับทำป้ายรูปแบบต่างๆ เช่น ป้ายไวนิล ป้ายสติกเกอร์ งานโฆษณา
+              รับทำป้ายรูปแบบต่าง ๆ เช่น ป้ายไวนิล ป้ายสติกเกอร์ งานโฆษณา
               และงานป้ายหลากหลายรูปแบบ ทั้งขนาดเล็กและขนาดใหญ่
             </p>
 
@@ -114,47 +110,55 @@ function App() {
         </div>
       </section>
 
-    <section className="about-section" id="about">
-  <div className="container">
-    <div className="about-wrapper">
-      <div className="about-text">
-        <span className="about-label">About Us</span>
-        <h2>วรรณชัย อาร์ตช็อป</h2>
+      <section className="about-section" id="about">
+        <div className="container">
+          <div className="about-wrapper">
+            <div className="about-text">
+              <span className="about-label">About Us</span>
+              <h2>วรรณชัย อาร์ตช็อป</h2>
 
-        <p className="about-intro">
-          เราให้บริการออกแบบ ผลิต และติดตั้งงานป้ายทุกประเภท
-          ด้วยความใส่ใจในรายละเอียด เน้นงานที่เรียบร้อย ทันสมัย
-          และเหมาะกับการใช้งานจริงของลูกค้า
-        </p>
+              <p className="about-intro">
+                เราให้บริการออกแบบ ผลิต และติดตั้งงานป้ายทุกประเภท
+                ด้วยความใส่ใจในรายละเอียด เน้นงานที่เรียบร้อย ทันสมัย
+                และเหมาะกับการใช้งานจริงของลูกค้า
+              </p>
 
-        {/* 🔥 ย้ายมาไว้ตรงนี้ */}
-        <div className="about-features">
-          <div className="about-feature">
-            <h3>ออกแบบสวย เรียบ ดูมืออาชีพ</h3>
-            <p>เน้นงานดีไซน์ที่อ่านง่าย ใช้งานจริงได้ดี และเหมาะกับภาพลักษณ์ของธุรกิจ</p>
+              <div className="about-features">
+                <div className="about-feature">
+                  <h3>ออกแบบสวย เรียบ ดูมืออาชีพ</h3>
+                  <p>
+                    เน้นงานดีไซน์ที่อ่านง่าย ใช้งานจริงได้ดี
+                    และเหมาะกับภาพลักษณ์ของธุรกิจ
+                  </p>
+                </div>
+
+                <div className="about-feature">
+                  <h3>ผลิตงานคุณภาพ</h3>
+                  <p>
+                    เลือกใช้วัสดุที่เหมาะสมกับประเภทงาน
+                    เพื่อให้ได้ผลงานที่สวยและทนทาน
+                  </p>
+                </div>
+
+                <div className="about-feature">
+                  <h3>บริการครบ ตั้งแต่เริ่มจนจบ</h3>
+                  <p>
+                    ดูแลตั้งแต่ขั้นตอนออกแบบ ผลิต
+                    ไปจนถึงติดตั้งอย่างเป็นระบบ
+                  </p>
+                </div>
+              </div>
+
+              <p className="about-outro">
+                ไม่ว่าจะเป็นป้ายไวนิล สติ๊กเกอร์ ป้ายอะคริลิค
+                หรือสื่อประชาสัมพันธ์หน้าร้าน เราพร้อมช่วยให้ร้านค้า ธุรกิจ
+                และองค์กรของคุณดูโดดเด่น น่าเชื่อถือ
+                และสื่อสารแบรนด์ได้ชัดเจนยิ่งขึ้น
+              </p>
+            </div>
           </div>
-
-          <div className="about-feature">
-            <h3>ผลิตงานคุณภาพ</h3>
-            <p>เลือกใช้วัสดุที่เหมาะสมกับประเภทงาน เพื่อให้ได้ผลงานที่สวยและทนทาน</p>
-          </div>
-
-          <div className="about-feature">
-            <h3>บริการครบ ตั้งแต่เริ่มจนจบ</h3>
-            <p>ดูแลตั้งแต่ขั้นตอนออกแบบ ผลิต ไปจนถึงติดตั้งอย่างเป็นระบบ</p>
-          </div>
-        </div>  <br />
-
-        {/* 👉 ข้อความนี้จะอยู่ล่างสุด */}
-        <p>
-          ไม่ว่าจะเป็นป้ายไวนิล สติ๊กเกอร์ ป้ายอะคริลิค หรือสื่อประชาสัมพันธ์หน้าร้าน
-          เราพร้อมช่วยให้ร้านค้า ธุรกิจ และองค์กรของคุณดูโดดเด่น น่าเชื่อถือ
-          และสื่อสารแบรนด์ได้ชัดเจนยิ่งขึ้น
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+        </div>
+      </section>
 
       <section id="services" className="section alt">
         <div className="container">
@@ -164,7 +168,8 @@ function App() {
               <div className="service-card" key={index}>
                 <h3>{service}</h3>
                 <p>
-                  งานออกแบบและผลิตอย่างใส่ใจ เหมาะสำหรับร้านค้าและธุรกิจทุกขนาด
+                  งานออกแบบและผลิตอย่างใส่ใจ
+                  เหมาะสำหรับร้านค้าและธุรกิจทุกขนาด
                 </p>
               </div>
             ))}
@@ -172,41 +177,25 @@ function App() {
         </div>
       </section>
 
-<<<<<<< HEAD
-      <section id="portfolio" className="section">
+      <section className="portfolio-section" id="portfolio">
         <div className="container">
           <h2>Portfolio</h2>
+
           <div className="portfolio-grid">
-            {portfolioImages.map((image, index) => (
-              <img
-                key={index}
-                src={image}
-                alt={`ผลงานร้านป้าย ${index + 1}`}
-                className="portfolio-img"
-              />
+            {portfolioItems.map((item) => (
+              <div className="portfolio-card" key={item.id}>
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="portfolio-image"
+                />
+                <h3>{item.title}</h3>
+                <p className="portfolio-description">{item.description}</p>
+              </div>
             ))}
           </div>
-=======
-    <section className="portfolio-section" id="portfolio">
-  <div className="container">
-    <h2>Portfolio</h2>
-
-    <div className="portfolio-grid">
-      {portfolioItems.map((item) => (
-        <div className="portfolio-card" key={item.id}>
-          <img
-            src={item.image}
-            alt={item.title}
-            className="portfolio-image"
-          />
-          <h3>{item.title}</h3>
-          <p className="portfolio-description">{item.description}</p>
->>>>>>> 3916390 (Update front page)
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
       <section className="contact-section" id="contact">
         <div className="container">
@@ -224,9 +213,7 @@ function App() {
                 <div className="contact-icon">💬</div>
                 <div className="contact-content">
                   <h3>LINE OA</h3>
-                  <p>
-                    พูดคุย สอบถามราคา และส่งรายละเอียดงานป้ายได้ทันที
-                  </p>
+                  <p>พูดคุย สอบถามราคา และส่งรายละเอียดงานป้ายได้ทันที</p>
                   <a
                     href="https://line.me/R/oaMessage/@575kncik/?text=สนใจทำป้ายครับ"
                     target="_blank"
@@ -242,9 +229,7 @@ function App() {
                 <div className="contact-icon">👍</div>
                 <div className="contact-content">
                   <h3>Facebook Page</h3>
-                  <p>
-                    ดูผลงานเพิ่มเติม ติดตามอัปเดต และติดต่อผ่านเพจร้าน
-                  </p>
+                  <p>ดูผลงานเพิ่มเติม ติดตามอัปเดต และติดต่อผ่านเพจร้าน</p>
                   <a
                     href="https://www.facebook.com/p/%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2-%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%8A%E0%B8%B1%E0%B8%A2-%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%95%E0%B8%8A%E0%B9%8A%E0%B8%AD%E0%B8%9B-%E0%B8%9B%E0%B8%97%E0%B8%B8%E0%B8%A1%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5-100066857031232/"
                     target="_blank"
@@ -260,13 +245,8 @@ function App() {
                 <div className="contact-icon">📞</div>
                 <div className="contact-content">
                   <h3>โทรศัพท์</h3>
-                  <p>
-                    โทรสอบถามราคา นัดคิวงาน หรือสอบถามรายละเอียดเพิ่มเติม
-                  </p>
-                  <a
-                    href="tel:0815588630"
-                    className="contact-btn tel-btn"
-                  >
+                  <p>โทรสอบถามราคา นัดคิวงาน หรือสอบถามรายละเอียดเพิ่มเติม</p>
+                  <a href="tel:0815588630" className="contact-btn tel-btn">
                     081-558-8630
                   </a>
                 </div>
@@ -276,9 +256,7 @@ function App() {
             <div className="map-card">
               <div className="map-header">
                 <h3>ตำแหน่งร้าน</h3>
-                <p>
-                  สามารถกดดูเส้นทางหรือเปิดใน Google Maps ได้ทันที
-                </p>
+                <p>สามารถกดดูเส้นทางหรือเปิดใน Google Maps ได้ทันที</p>
               </div>
 
               <div className="map-frame">
