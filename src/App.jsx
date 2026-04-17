@@ -216,7 +216,7 @@ function App() {
                   <h3>LINE OA</h3>
                   <p>พูดคุย สอบถามราคา และส่งรายละเอียดงานป้ายได้ทันที</p>
                   <a
-                    href="https://line.me/R/oaMessage/@575kncik/?text=สนใจทำป้ายครับ"
+                    href="https://line.me/R/oaMessage/@575kncik/?สนใจทำป้ายครับ"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="contact-btn line-btn"
@@ -247,8 +247,8 @@ function App() {
                 <div className="contact-content">
                   <h3>โทรศัพท์</h3>
                   <p>โทรสอบถามราคา นัดคิวงาน หรือสอบถามรายละเอียดเพิ่มเติม</p>
-                  <a href="tel:0815588630" className="contact-btn tel-btn">
-                    081-558-8630
+                  <a href="tel:0929853020" className="contact-btn tel-btn">
+                    092-985-3020
                   </a>
                 </div>
               </div>
