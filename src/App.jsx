@@ -123,12 +123,14 @@ function App() {
                 และเหมาะกับการใช้งานจริงของลูกค้า
               </p>
 
-        {/* 🔥 ย้ายมาไว้ตรงนี้ */}
-        <div className="about-features">
-          <div className="about-feature">
-            <h3>ออกแบบสวย เรียบ ดูมืออาชีพ</h3>
-            <p>เน้นงานดีไซน์ที่อ่านง่าย ใช้งานจริงได้ดี และเหมาะกับภาพลักษณ์ของธุรกิจ</p>
-          </div>
+              <div className="about-features">
+                <div className="about-feature">
+                  <h3>ออกแบบสวย เรียบ ดูมืออาชีพ</h3>
+                  <p>
+                    เน้นงานดีไซน์ที่อ่านง่าย ใช้งานจริงได้ดี
+                    และเหมาะกับภาพลักษณ์ของธุรกิจ
+                  </p>
+                </div>
 
                 <div className="about-feature">
                   <h3>ผลิตงานคุณภาพ</h3>
@@ -138,22 +140,26 @@ function App() {
                   </p>
                 </div>
 
-          <div className="about-feature">
-            <h3>บริการครบ ตั้งแต่เริ่มจนจบ</h3>
-            <p>ดูแลตั้งแต่ขั้นตอนออกแบบ ผลิต ไปจนถึงติดตั้งอย่างเป็นระบบ</p>
-          </div>
-        </div>  <br />
+                <div className="about-feature">
+                  <h3>บริการครบ ตั้งแต่เริ่มจนจบ</h3>
+                  <p>
+                    ดูแลตั้งแต่ขั้นตอนออกแบบ ผลิต ไปจนถึงติดตั้งอย่างเป็นระบบ
+                  </p>
+                </div>
+              </div>
 
-        {/* 👉 ข้อความนี้จะอยู่ล่างสุด */}
-        <p>
-          ไม่ว่าจะเป็นป้ายไวนิล สติ๊กเกอร์ ป้ายอะคริลิค หรือสื่อประชาสัมพันธ์หน้าร้าน
-          เราพร้อมช่วยให้ร้านค้า ธุรกิจ และองค์กรของคุณดูโดดเด่น น่าเชื่อถือ
-          และสื่อสารแบรนด์ได้ชัดเจนยิ่งขึ้น
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+              <br />
+
+              <p>
+                ไม่ว่าจะเป็นป้ายไวนิล สติ๊กเกอร์ ป้ายอะคริลิค
+                หรือสื่อประชาสัมพันธ์หน้าร้าน เราพร้อมช่วยให้ร้านค้า ธุรกิจ
+                และองค์กรของคุณดูโดดเด่น น่าเชื่อถือ
+                และสื่อสารแบรนด์ได้ชัดเจนยิ่งขึ้น
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section id="services" className="section alt">
         <div className="container">
@@ -172,39 +178,25 @@ function App() {
         </div>
       </section>
 
-      <section id="portfolio" className="section">
+      <section className="portfolio-section" id="portfolio">
         <div className="container">
           <h2>Portfolio</h2>
+
           <div className="portfolio-grid">
-            {portfolioImages.map((image, index) => (
-              <img
-                key={index}
-                src={image}
-                alt={`ผลงานร้านป้าย ${index + 1}`}
-                className="portfolio-img"
-              />
+            {portfolioItems.map((item) => (
+              <div className="portfolio-card" key={item.id}>
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="portfolio-image"
+                />
+                <h3>{item.title}</h3>
+                <p className="portfolio-description">{item.description}</p>
+              </div>
             ))}
           </div>
-    <section className="portfolio-section" id="portfolio">
-  <div className="container">
-    <h2>Portfolio</h2>
-
-    <div className="portfolio-grid">
-      {portfolioItems.map((item) => (
-        <div className="portfolio-card" key={item.id}>
-          <img
-            src={item.image}
-            alt={item.title}
-            className="portfolio-image"
-          />
-          <h3>{item.title}</h3>
-          <p className="portfolio-description">{item.description}</p>
- 3916390 (Update front page)
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
       <section className="contact-section" id="contact">
         <div className="container">
@@ -254,13 +246,8 @@ function App() {
                 <div className="contact-icon">📞</div>
                 <div className="contact-content">
                   <h3>โทรศัพท์</h3>
-                  <p>
-                    โทรสอบถามราคา นัดคิวงาน หรือสอบถามรายละเอียดเพิ่มเติม
-                  </p>
-                  <a
-                    href="tel:0815588630"
-                    className="contact-btn tel-btn"
-                  >
+                  <p>โทรสอบถามราคา นัดคิวงาน หรือสอบถามรายละเอียดเพิ่มเติม</p>
+                  <a href="tel:0815588630" className="contact-btn tel-btn">
                     081-558-8630
                   </a>
                 </div>
