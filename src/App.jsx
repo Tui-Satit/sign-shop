@@ -59,7 +59,7 @@ function App() {
     <div className="app">
       <header className="header">
         <div className="container nav">
-          <h1 className="logo">P’Kea Sign Shop</h1>
+          <h1 className="logo">Wannachai Sign</h1>
 
           <nav>
             <a href="#about">About</a>
@@ -201,12 +201,12 @@ function App() {
       <section className="contact-section" id="contact">
         <div className="container">
           <div className="section-header">
-            <p className="section-tag">CONTACT US</p>
+            <p className="section-tag">CONTACT US</p><br />
             <h2>ติดต่อร้านทำป้าย</h2>
             <p className="section-subtext">
               สอบถามราคา ส่งรายละเอียดงาน หรือดูตำแหน่งร้านได้จากช่องทางด้านล่าง
             </p>
-          </div>
+          </div><br />
 
           <div className="contact-box">
             <div className="contact-info">
@@ -258,7 +258,7 @@ function App() {
               <div className="map-header">
                 <h3>ตำแหน่งร้าน</h3>
                 <p>สามารถกดดูเส้นทางหรือเปิดใน Google Maps ได้ทันที</p>
-              </div>
+              </div><br />
 
               <div className="map-frame">
                 <iframe
@@ -277,7 +277,7 @@ function App() {
                 href="https://maps.app.goo.gl/biP3GPKscGcDwiTZA"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="map-link-btn"
+                className="map-btn"
               >
                 เปิดแผนที่
               </a>

@@ -17,6 +17,7 @@ body {
 }
 
 /* ===== HEADER ===== */
+/* ===== HEADER ===== */
 .header {
   background: #fff;
   border-bottom: 1px solid #eee;
@@ -29,19 +30,105 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 70px;
+  gap: 20px;
+  min-height: 76px;
+  padding: 16px 0;
 }
 
 .nav nav {
   display: flex;
+  align-items: center;
   gap: 16px;
+  flex-wrap: wrap;
+}
+
+.nav nav a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 600;
 }
 
 .logo {
-  font-size: 1.6rem;
-  font-weight: bold;
+  font-size: 1.7rem;
+  font-weight: 800;
+  line-height: 1.05;
+  color: #111;
 }
 
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.btn.primary {
+  background: #d89b00;
+  color: #fff;
+}
+
+.btn.secondary {
+  background: #fff;
+  border: 1px solid #ddd;
+  color: #222;
+}
+
+/* ===== MOBILE NAVBAR ===== */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    padding: 18px 0;
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 1.35rem;
+    line-height: 1.05;
+    text-align: center;
+  }
+
+  .nav nav {
+    justify-content: center;
+    gap: 10px 14px;
+    width: 100%;
+  }
+
+  .nav nav a:not(.btn) {
+    font-size: 1rem;
+  }
+
+  .nav .btn.primary {
+    padding: 10px 18px;
+    border-radius: 14px;
+    min-width: 92px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .nav nav {
+    gap: 10px 12px;
+  }
+
+  .nav nav a:not(.btn) {
+    font-size: 0.95rem;
+  }
+
+  .nav .btn.primary {
+    padding: 9px 16px;
+    min-width: 84px;
+  }
+}
 /* ===== HERO ===== */
 .hero {
   padding: 80px 20px;
@@ -290,4 +377,21 @@ body {
   .portfolio-image {
     height: 240px;
   }
+}
+
+.map-btn {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 12px 20px;
+  border-radius: 14px;
+  background: #1877f2;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.map-btn:hover {
+  background: #145edc;
+  transform: translateY(-2px);
 }
