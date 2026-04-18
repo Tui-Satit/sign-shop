@@ -100,15 +100,15 @@ function App() {
             </div>
           </div>
 
-          <div className="hero-card">
-            <h3>บริการเด่น</h3>
-            <ul>
-              <li>ออกแบบโลโก้</li>
-              <li>ป้ายไวนิล / สติกเกอร์</li>
-              <li>งานพิมพ์โฆษณา</li>
-              <li>ป้ายร้าน / ป้ายธุรกิจ</li>
-            </ul>
-          </div>
+      <div class="hero-service-card">
+  <h3>บริการเด่น</h3>
+  <ul class="hero-service-list">
+    <li>ออกแบบโลโก้</li>
+    <li>ป้ายไวนิล / สติ๊กเกอร์</li>
+    <li>งานพิมพ์โฆษณา</li>
+    <li>ป้ายร้าน / ป้ายธุรกิจ</li>
+  </ul>
+</div>    
         </div>
       </section>
 

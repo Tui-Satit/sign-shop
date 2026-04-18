@@ -395,3 +395,44 @@ body {
   background: #145edc;
   transform: translateY(-2px);
 }
+
+.hero-service-card {
+  background: #f8f8f8;
+  border-radius: 24px;
+  padding: 32px 36px;
+  max-width: 420px;
+  width: 100%;
+}
+
+.hero-service-card h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.hero-service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-service-list li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #222;
+  text-align: left;
+}
+
+.hero-service-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #b88a00;
+  font-size: 1rem;
+}
