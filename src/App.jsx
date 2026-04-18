@@ -224,7 +224,7 @@ function App() {
   
     <div>
       <a
-        href={`https://line.me/R/oaMessage/@611cpkqx/?text=${message}`}
+        href={`https://line.me/R/oaMessage/@611cpkqx/?${message}`}
         target="_blank"
         rel="noopener noreferrer"
         className="contact-btn line-btn"
