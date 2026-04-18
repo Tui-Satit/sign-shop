@@ -215,7 +215,14 @@ function App() {
                 <div className="contact-content">
                   <h3>LINE OA</h3>
                   <p>พูดคุย สอบถามราคา และส่งรายละเอียดงานป้ายได้ทันที</p>
-                
+                <a
+              href="https://line.me/R/oaMessage/@611cpkqx/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-btn line-btn"
+            >
+              LINE
+            </a>
                 
                 </div>
               </div>
