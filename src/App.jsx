@@ -55,6 +55,8 @@ function App() {
     },
   ];
 
+  const message = encodeURIComponent("สนใจทำป้ายครับ");
+
   return (
     <div className="app">
       <header className="header">
@@ -215,14 +217,25 @@ function App() {
                 <div className="contact-content">
                   <h3>LINE OA</h3>
                   <p>พูดคุย สอบถามราคา และส่งรายละเอียดงานป้ายได้ทันที</p>
-                <a
-              href="https://line.me/R/oaMessage/@611cpkqx/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="contact-btn line-btn"
-            >
-              LINE
-            </a>
+       
+
+  
+
+  
+    <div>
+      <a
+        href={`https://line.me/R/oaMessage/@611cpkqx/?text=${message}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="contact-btn line-btn"
+      >
+        แชท LINE
+      </a>
+    </div>
+  
+
+
+    
                 
                 </div>
               </div>
