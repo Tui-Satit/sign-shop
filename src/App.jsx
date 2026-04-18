@@ -215,21 +215,21 @@ function App() {
                 <div className="contact-content">
                   <h3>LINE OA</h3>
                   <p>พูดคุย สอบถามราคา และส่งรายละเอียดงานป้ายได้ทันที</p>
-                  <a
-                    href="https://line.me/R/oaMessage/@ุ611cpkqx/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="contact-btn line-btn"
-                  >
-                    แชท LINE
-                  </a>
+                 <a
+              href="https://line.me/R/oaMessage/@611cpkqx/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-btn line-btn"
+            >
+              LINE
+            </a>
                 
                 </div>
               </div>
 
               <div className="contact-card">
                 <div className="contact-icon">👍</div>
-                <div className="contact-content">
+                <div className="contact-content"> 
                   <h3>Facebook Page</h3>
                   <p>ดูผลงานเพิ่มเติม ติดตามอัปเดต และติดต่อผ่านเพจร้าน</p>
                   <a
