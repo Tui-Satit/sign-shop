@@ -70,7 +70,7 @@ function App() {
               href="https://line.me/R/oaMessage/@611cpkqx/"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn primary"
+              className="contact-btn line-btn"
             >
               LINE
             </a>
@@ -223,7 +223,7 @@ function App() {
                   >
                     แชท LINE
                   </a>
-                 
+                
                 </div>
               </div>
 
