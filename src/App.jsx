@@ -67,7 +67,7 @@ function App() {
             <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
             <a
-              href="https://line.me/R/oaMessage/@575kncik/"
+              href="https://line.me/R/oaMessage/@611cpkqx/"
               target="_blank"
               rel="noopener noreferrer"
               className="btn primary"
@@ -216,7 +216,7 @@ function App() {
                   <h3>LINE OA</h3>
                   <p>พูดคุย สอบถามราคา และส่งรายละเอียดงานป้ายได้ทันที</p>
                   <a
-                    href="https://line.me/R/oaMessage/@575kncik/?สนใจทำป้ายครับ"
+                    href="https://line.me/R/oaMessage/@ุ611cpkqx/?สนใจทำป้ายครับ"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="contact-btn line-btn"
@@ -232,7 +232,7 @@ function App() {
                   <h3>Facebook Page</h3>
                   <p>ดูผลงานเพิ่มเติม ติดตามอัปเดต และติดต่อผ่านเพจร้าน</p>
                   <a
-                    href="https://www.facebook.com/p/%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2-%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%8A%E0%B8%B1%E0%B8%A2-%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%95%E0%B8%8A%E0%B9%8A%E0%B8%AD%E0%B8%9B-%E0%B8%9B%E0%B8%97%E0%B8%B8%E0%B8%A1%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5-100066857031232/"
+                    href="https://www.facebook.com/wrrn.chay.xart.chxp"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="contact-btn facebook-btn"
