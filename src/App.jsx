@@ -216,13 +216,21 @@ function App() {
                   <h3>LINE OA</h3>
                   <p>พูดคุย สอบถามราคา และส่งรายละเอียดงานป้ายได้ทันที</p>
                   <a
-                    href="https://line.me/R/oaMessage/@ุ611cpkqx/?สนใจทำป้ายครับ"
+                    href="https://line.me/R/oaMessage/@ุ611cpkqx/Text=?สนใจทำป้ายครับ"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="contact-btn line-btn"
                   >
                     แชท LINE
                   </a>
+                  <a
+              href="https://line.me/R/oaMessage/@611cpkqx/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn primary"
+            >
+              LINE
+            </a>
                 </div>
               </div>
 
